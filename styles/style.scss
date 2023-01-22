@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+$PrimaryRed: hsl(0, 78%, 62%);
+$PrimaryCyan: hsl(180, 62%, 55%);
+$PrimaryOrange: hsl(34, 97%, 64%);
+$PrimaryBlue: hsl(212, 86%, 64%);
+
+$NeutralVeryDarkBlue: hsl(234, 12%, 34%);
+$NeutralGrayishBlue: hsl(229, 6%, 66%);
+$NeutralVeryLighGray: hsl(0, 0%, 98%);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: $NeutralVeryLighGray;
+}
+.maintitle{
+    text-align: center;
+    padding: 40px 0 10px 0;
+    span:first-child{
+        color: $NeutralGrayishBlue;
+        font-size: x-large;
+        font-weight: 300;
+    }
+    span:last-of-type{
+        font-weight: 600; 
+        font-size: x-large;
+        color: $NeutralVeryDarkBlue;
+    }
+    .subtitle{
+        color: $NeutralGrayishBlue;
+        font-size: 12px;
+        width: 30%;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+}
+.cardrow{
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    .card{
+        width: fit-content;
+        max-width: 350px;
+        height: 250px;
+        background-color: white;
+        margin: 30px auto;
+        padding: 25px;
+        box-shadow: 6px 6px 10px $NeutralGrayishBlue;
+        border-radius: 6px;
+        img{
+            float: right;
+        }
+    }
+    p{
+        color: $NeutralGrayishBlue;
+        font-size: 13px;
+        padding: 10px 0 60px 0;
+    }
+}
+.cardcol{
+    width: 33%;
+    
+}
+
+.cian{
+    border-top: 4px solid $PrimaryCyan;
+}
+.red{
+    border-top: 4px solid $PrimaryRed;
+}
+.orange{
+    border-top: 4px solid $PrimaryOrange;
+}
+.blue{
+    border-top: 4px solid $PrimaryBlue;
+}
+
+@media only screen and (max-width: 1400px){
+    .cardrow{
+        flex-direction: column;
+        width: 80% !important;
+    }
+    .cardcol{
+        width: 100%;
+    }
+    .subtitle{
+        width: 80% !important;
+    }
+}

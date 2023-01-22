@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: hsl(0deg, 0%, 98%);
+}
+
+.maintitle {
+  text-align: center;
+  padding: 40px 0 10px 0;
+}
+.maintitle span:first-child {
+  color: hsl(229deg, 6%, 66%);
+  font-size: x-large;
+  font-weight: 300;
+}
+.maintitle span:last-of-type {
+  font-weight: 600;
+  font-size: x-large;
+  color: hsl(234deg, 12%, 34%);
+}
+.maintitle .subtitle {
+  color: hsl(229deg, 6%, 66%);
+  font-size: 12px;
+  width: 30%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.cardrow {
+  display: flex;
+  margin: 0 auto;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+}
+.cardrow .card {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 350px;
+  height: 250px;
+  background-color: white;
+  margin: 30px auto;
+  padding: 25px;
+  box-shadow: 6px 6px 10px hsl(229deg, 6%, 66%);
+  border-radius: 6px;
+}
+.cardrow .card img {
+  float: right;
+}
+.cardrow p {
+  color: hsl(229deg, 6%, 66%);
+  font-size: 13px;
+  padding: 10px 0 60px 0;
+}
+
+.cardcol {
+  width: 33%;
+}
+
+.cian {
+  border-top: 4px solid hsl(180deg, 62%, 55%);
+}
+
+.red {
+  border-top: 4px solid hsl(0deg, 78%, 62%);
+}
+
+.orange {
+  border-top: 4px solid hsl(34deg, 97%, 64%);
+}
+
+.blue {
+  border-top: 4px solid hsl(212deg, 86%, 64%);
+}
+
+@media only screen and (max-width: 1400px) {
+  .cardrow {
+    flex-direction: column;
+    width: 80% !important;
+  }
+  .cardcol {
+    width: 100%;
+  }
+  .subtitle {
+    width: 80% !important;
+  }
+}/*# sourceMappingURL=style.css.map */
